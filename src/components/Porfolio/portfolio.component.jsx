@@ -16,7 +16,11 @@ export default function Portfolio() {
       <div className="project-links">
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
-            <a href="https://omnifood-nhu.netlify.app" target="_blank">
+            <a
+              href="https://omnifood-nhu.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <CardMedia
                 className="card-image"
                 sx={{ height: 140 }}
@@ -43,6 +47,7 @@ export default function Portfolio() {
                 className="project-link"
                 href="https://omnifood-nhu.netlify.app"
                 target="_blank"
+                rel="noreferrer"
               >
                 Learn More
               </a>
@@ -51,7 +56,11 @@ export default function Portfolio() {
         </Card>
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
-            <a href="https://lotus-tours.netlify.app" target="_blank">
+            <a
+              href="https://lotus-tours.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <CardMedia
                 className="card-image"
                 sx={{ height: 140 }}
@@ -78,6 +87,7 @@ export default function Portfolio() {
                 className="project-link"
                 href="https://lotus-tours.netlify.app"
                 target="_blank"
+                rel="noreferrer"
               >
                 Learn More
               </a>
@@ -86,7 +96,11 @@ export default function Portfolio() {
         </Card>
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
-            <a href="https://forkify-nhu.netlify.app" target="_blank">
+            <a
+              href="https://forkify-nhu.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <CardMedia
                 className="card-image"
                 sx={{ height: 140 }}
@@ -114,6 +128,7 @@ export default function Portfolio() {
                 className="project-link"
                 href="https://forkify-nhu.netlify.app"
                 target="_blank"
+                rel="noreferrer"
               >
                 Learn More
               </a>
@@ -122,7 +137,11 @@ export default function Portfolio() {
         </Card>
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
-            <a href="https://guess-my-number-nhu.netlify.app" target="_blank">
+            <a
+              href="https://guess-my-number-nhu.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <CardMedia
                 className="card-image"
                 sx={{ height: 140 }}
@@ -149,6 +168,7 @@ export default function Portfolio() {
                 className="project-link"
                 href="https://guess-my-number-nhu.netlify.app"
                 target="_blank"
+                rel="noreferrer"
               >
                 Learn More
               </a>

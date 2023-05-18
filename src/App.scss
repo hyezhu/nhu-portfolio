@@ -1,0 +1,29 @@
+$color-main: #212529;
+$color-secondary: #0f4c5c;
+$color-third: #f77f00;
+$color-third-light: #ffdd00;
+
+$color-text-heading: #ff9505;
+$color-text-paragraph: #e9ecef;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $color-text-paragraph;
+  background-color: #000;
+  // background-image: url("./img/bg.svg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+}
+
+div {
+  width: 100%vw;
+  margin: 0 auto;
+}
+
+

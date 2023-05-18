@@ -1,0 +1,65 @@
+.section-header {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to left, #f77f00, #ffdd00);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.sub-heading {
+  text-align: center;
+  color: #e9ecef;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.icons-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+//   margin-left: 50px;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #e9ecef;
+}
+
+.icon {
+    border-radius: 50%;
+}
+
+.icon:hover {
+  background-image: linear-gradient(
+    to right,
+    #e9ecef,
+    #ffdd05,
+    #ff9505,
+    #f77f03
+  );
+  color: #000;
+  border-radius: 50%;
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}

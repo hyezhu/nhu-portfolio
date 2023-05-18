@@ -1,10 +1,4 @@
-$color-main: #212529;
-$color-secondary: #0f4c5c;
-$color-third: #f77f00;
-$color-third-light: #ffdd00;
-
-$color-text-heading: #ff9505;
-$color-text-paragraph: #e9ecef;
+@import "./configs/configs.styles.scss";
 
 * {
   box-sizing: border-box;
@@ -13,8 +7,8 @@ $color-text-paragraph: #e9ecef;
 }
 
 body {
-  color: $color-text-paragraph;
-  background-color: #000;
+  color: $color-text;
+  background-color: $color-background;
   // background-image: url("./img/bg.svg");
   // background-repeat: no-repeat;
   // background-position: center;
@@ -24,6 +18,11 @@ body {
 div {
   width: 100%vw;
   margin: 0 auto;
+}
+
+footer {
+  margin-top: 80px;
+  text-align: center;
 }
 
 

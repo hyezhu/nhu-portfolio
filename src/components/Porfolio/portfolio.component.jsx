@@ -16,14 +16,21 @@ export default function Portfolio() {
       <div className="project-links">
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
-            <CardMedia
-              className="card-image"
-              sx={{ height: 140 }}
-              image={OmniFood}
-              title="omni food"
-            />
+            <a href="https://omnifood-nhu.netlify.app" target="_blank">
+              <CardMedia
+                className="card-image"
+                sx={{ height: 140 }}
+                image={OmniFood}
+                title="omni food"
+              />
+            </a>
+
             <CardContent className="content">
-              <p>Start-up: Omnifood - healthy meal service (HTML, CSS, responsive)</p>
+              <p>
+                <h4>Start-up: Omnifood - healthy meal</h4> 
+                <br/>
+                <i>Implemented fluid layout and media query to build a responsive website using HTML, CSS and Javascript (for sticky menu)</i>
+              </p>
             </CardContent>
           </CardActionArea>
 
@@ -32,6 +39,7 @@ export default function Portfolio() {
               <a
                 className="project-link"
                 href="https://omnifood-nhu.netlify.app"
+                target="_blank"
               >
                 Learn More
               </a>
@@ -40,14 +48,24 @@ export default function Portfolio() {
         </Card>
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
-            <CardMedia
-              className="card-image"
-              sx={{ height: 140 }}
-              image={LotusTour}
-              title="lotus tour"
-            />
+            <a href="https://lotus-tours.netlify.app" target="_blank">
+              <CardMedia
+                className="card-image"
+                sx={{ height: 140 }}
+                image={LotusTour}
+                title="lotus tour"
+              />
+            </a>
+
             <CardContent className="content">
-              <p>Landing page for adventurous tour agency (HTML, Sass, responsive)</p>
+              <p>
+                <h4>Tour agency's landing page</h4>
+                <br />
+                <i>
+                  Created responsive web page with animations, applying image
+                  optimaztion and browser compatibility using HTML and Sass
+                </i>
+              </p>
             </CardContent>
           </CardActionArea>
 
@@ -56,6 +74,7 @@ export default function Portfolio() {
               <a
                 className="project-link"
                 href="https://lotus-tours.netlify.app"
+                target="_blank"
               >
                 Learn More
               </a>
@@ -64,14 +83,25 @@ export default function Portfolio() {
         </Card>
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
-            <CardMedia
-              className="card-image"
-              sx={{ height: 140 }}
-              image={Forkify}
-              title="forkify app"
-            />
+            <a href="https://forkify-nhu.netlify.app" target="_blank">
+              <CardMedia
+                className="card-image"
+                sx={{ height: 140 }}
+                image={Forkify}
+                title="forkify app"
+              />
+            </a>
+
             <CardContent className="content">
-              <p>Web application to look up recipes (HTML, CSS, Javascript)</p>
+              <p>
+                <h4>Recipe web application</h4>
+                <br />
+                <i>
+                  Worked with APIs and data storage. Implemented function where
+                  user can upload their own recipe. Project used HTML, CSS and
+                  Javascript
+                </i>
+              </p>
             </CardContent>
           </CardActionArea>
 
@@ -80,6 +110,7 @@ export default function Portfolio() {
               <a
                 className="project-link"
                 href="https://forkify-nhu.netlify.app"
+                target="_blank"
               >
                 Learn More
               </a>
@@ -88,14 +119,24 @@ export default function Portfolio() {
         </Card>
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
-            <CardMedia
-              className="card-image"
-              sx={{ height: 140 }}
-              image={GuessNumber}
-              title="number game"
-            />
+            <a href="https://guess-my-number-nhu.netlify.app" target="_blank">
+              <CardMedia
+                className="card-image"
+                sx={{ height: 140 }}
+                image={GuessNumber}
+                title="number game"
+              />
+            </a>
+
             <CardContent className="content">
-              <p>Small fun web game built on Javascript (HTML, CSS, Javascript, responsive)</p>
+              <p>
+                <h4>Guess the Number</h4>
+                <br />
+                <i>
+                  Small game built on Javascript applying logic and event
+                  handling functions together with responsive design using CSS
+                </i>
+              </p>
             </CardContent>
           </CardActionArea>
 
@@ -104,6 +145,7 @@ export default function Portfolio() {
               <a
                 className="project-link"
                 href="https://guess-my-number-nhu.netlify.app"
+                target="_blank"
               >
                 Learn More
               </a>

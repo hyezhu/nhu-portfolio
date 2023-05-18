@@ -4,37 +4,75 @@ h2 {
 }
 
 .section-about-me {
-    margin: 120px 0px;
+  margin: 120px 0px;
 
-.about-me-text {
+  .about-me-text {
     background-color: rgba(#fff, 0.1);
     padding: 10px 20px;
     box-shadow: 0 5px 10px rgba(#fff, 0.2);
     border-radius: 20px;
+  }
+
+  .about-me-photo {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+  }
+  .about-me-photo {
+    height: 270px;
+    border-radius: 50%;
+    float: left;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    //   transform: translateX(50%);
+  }
+  .about-me-photo:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    cursor: pointer;
+    //   transform: translateX(50%);
+  }
 }
 
-.about-me-photo {
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
+.btn-cv {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
 }
-.about-me-photo {
-  height: 270px;
-  border-radius: 50%;
-  float: left;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-//   transform: translateX(50%);
+
+.btn-cv {
+  --primary-color: #f77f00;
+  --hovered-color: #ffdd00;
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  align-items: center;
 }
-.about-me-photo:hover {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  cursor: pointer;
-//   transform: translateX(50%);
+
+.btn-cv span {
+  margin: 0;
+  position: relative;
+  font-size: 14px;
+  color: var(--primary-color);
 }
+
+.btn-cv::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 1px;
+  transition: 0.3s ease-out;
+}
+
+.btn-cv:hover::after {
+  width: 100%;
 }

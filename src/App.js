@@ -1,14 +1,9 @@
-import logo from "./logo.svg";
 import "./App.scss";
 import Navigation from "./components/Navigation/navigation.component";
 import AboutMe from "./components/About-me/about-me.component";
-import Education from "./components/Education/education.component";
-import Experience from "./components/Experience/experience.component";
 import Contact from "./components/Contact/contact.component";
 import Portfolio from "./components/Porfolio/portfolio.component";
 import Header from "./components/header/header.component";
-import Avatar from "@mui/material/Avatar";
-import nhuPic from "./img/Nhu.jpeg";
 import Container from "@mui/material/Container";
 function App() {
   return (

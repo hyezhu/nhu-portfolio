@@ -11,7 +11,7 @@ import Forkify from "../../img/forkify.png";
 
 export default function Portfolio() {
   return (
-    <div>
+    <div id="portfolio">
       <h2>Portfolio</h2>
       <div className="project-links">
         <Card className="card" sx={{ maxWidth: 360 }}>

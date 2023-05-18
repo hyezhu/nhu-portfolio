@@ -27,9 +27,12 @@ export default function Portfolio() {
 
             <CardContent className="content">
               <p>
-                <h4>Start-up: Omnifood - healthy meal</h4> 
-                <br/>
-                <i>Implemented fluid layout and media query to build a responsive website using HTML, CSS and Javascript (for sticky menu)</i>
+                <h4>Start-up: Omnifood - healthy meal</h4>
+                <br />
+                <i>
+                  Implemented fluid layout and media query to build a responsive
+                  website using HTML, CSS and Javascript (for sticky menu)
+                </i>
               </p>
             </CardContent>
           </CardActionArea>

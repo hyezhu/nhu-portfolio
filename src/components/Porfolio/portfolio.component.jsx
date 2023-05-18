@@ -18,12 +18,12 @@ export default function Portfolio() {
           <CardActionArea>
             <CardMedia
               className="card-image"
-              sx={{ height: 140}}
+              sx={{ height: 140 }}
               image={OmniFood}
               title="omni food"
             />
             <CardContent className="content">
-              <p>Start-up: Omnifood - healthy meal service</p>
+              <p>Start-up: Omnifood - healthy meal service (HTML, CSS, responsive)</p>
             </CardContent>
           </CardActionArea>
 
@@ -47,7 +47,7 @@ export default function Portfolio() {
               title="lotus tour"
             />
             <CardContent className="content">
-              <p>Landing page for adventurous tour agency</p>
+              <p>Landing page for adventurous tour agency (HTML, Sass, responsive)</p>
             </CardContent>
           </CardActionArea>
 
@@ -71,7 +71,7 @@ export default function Portfolio() {
               title="forkify app"
             />
             <CardContent className="content">
-              <p>Web application to look up recipes</p>
+              <p>Web application to look up recipes (HTML, CSS, Javascript)</p>
             </CardContent>
           </CardActionArea>
 
@@ -95,7 +95,7 @@ export default function Portfolio() {
               title="number game"
             />
             <CardContent className="content">
-              <p>Small fun web game built on Javascript</p>
+              <p>Small fun web game built on Javascript (HTML, CSS, Javascript, responsive)</p>
             </CardContent>
           </CardActionArea>
 

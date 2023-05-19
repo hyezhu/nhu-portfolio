@@ -1,5 +1,4 @@
 import "./form.styles.scss";
-import { useState } from "react";
 import { NetlifyForm, Honeypot } from "react-netlify-forms";
 
 

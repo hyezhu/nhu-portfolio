@@ -6,7 +6,7 @@ export default function Form() {
     return (
       <NetlifyForm
         className="form"
-        name="Contact"
+        name="contact"
         action="/thanks"
         honeypotName="bot-field"
       >
@@ -19,6 +19,7 @@ export default function Form() {
                 Sorry, we could not reach our servers. Please try again later.
               </p>
             )}
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label htmlFor="name">Name:</label>
               <input

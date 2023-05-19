@@ -1,103 +1,30 @@
 import "./contact.styles.scss";
-import { useState } from "react";
+import Form from "../Form/form.component.jsx";
+import { Grid } from "@mui/material";
+
 
 export default function Contact() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  
-
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-
-  
-  /* Here’s the juicy bit for posting the form submission */
-
-  function handleSubmit(e) {
-    const state = { name: "", email: "", message: "" };
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...state }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-
-    e.preventDefault();
-  };
-  
-
-  return (
-    <div id="contact">
-      <h2>Contact me</h2>
-
-      <form
-        className="form"
-        name="contactForm"
-        method="POST"
-        data-netlify="true"
-        onSubmit={handleSubmit}
-        action="/pages/success"
-      >
-        <input
-          type="hidden"
-          name="form-name"
-          value="contactForm"
-          onChange={(e) => {
-            setForm({
-              ...form,
-              name: e.target.value,
-            });
-          }}
-        />
-        <p>
-          <label>
-            Your Name: <input type="text" name="name" required />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email:{" "}
-            <input
-              type="email"
-              name="email"
-              required
-              onChange={(e) => {
-                setForm({
-                  ...form,
-                  email: e.target.value,
-                });
-              }}
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:{" "}
-            <textarea
-              name="message"
-              onChange={(e) => {
-                setForm({
-                  ...form,
-                  message: e.target.value,
-                });
-              }}
-            ></textarea>
-          </label>
-        </p>
-        <p>
-          <button className="btn-submit" type="submit">
-            Send
-          </button>
-        </p>
-      </form>
-    </div>
-  );
+ return (
+   <div id="contact" className="section-cta">
+     <Grid container spacing={4} justifyContent="center" alignItems="center" direction="row">
+       <div className="contact-text">
+         <p className="popout">
+          <span>C</span>
+          <span>O</span>
+          <span>N</span>
+          <span>T</span>
+          <span>A</span>
+          <span>C</span>
+          <span>T</span>
+          <br/>
+          <span>M</span>
+          <span>E</span>
+         </p>
+       </div>
+       <div className="form-container">
+         <Form />
+       </div>
+     </Grid>
+   </div>
+ );
 }

@@ -1,100 +1,61 @@
 import "./form.styles.scss";
 import { useState } from "react";
+import { NetlifyForm, Honeypot } from "react-netlify-forms";
+
 
 export default function Form() {
-     const [form, setForm] = useState({
-       name: "",
-       email: "",
-       message: "",
-     });
+    return (
+      <NetlifyForm
+        className="form"
+        name="Contact"
+        action="/thanks"
+        honeypotName="bot-field"
+      >
+        {({ handleChange, success, error }) => (
+          <>
+            <Honeypot />
+            {success && <p>Thanks for contacting us!</p>}
+            {error && (
+              <p>
+                Sorry, we could not reach our servers. Please try again later.
+              </p>
+            )}
+            <div>
+              <label htmlFor="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                onChange={handleChange}
+              />
+            </div>
 
-     const encode = (data) => {
-       return Object.keys(data)
-         .map(
-           (key) =>
-             encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-         )
-         .join("&");
-     };
-
-     /* Here’s the juicy bit for posting the form submission */
-
-     function handleSubmit(e) {
-       const state = { name: "", email: "", message: "" };
-       fetch("/", {
-         method: "POST",
-         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-         body: encode({ "contactForm": "contact", ...state }),
-       })
-         .then(() => alert("Success!"))
-         .catch((error) => alert(error));
-
-       e.preventDefault();
-     }
-
-     return (
-       <div>
-         <form
-           className="form"
-           name="contactForm"
-           method="POST"
-           data-netlify="true"
-           onSubmit={handleSubmit}
-           action="/pages/success"
-           data-netlify-honeypot="bot-field"
-           hidden
-         >
-           <input type="hidden" name="contactForm" value="contact" />
-           <p>
-             <label>Your Name: </label>
-             <input
-               type="text"
-               name="name"
-               required
-               onChange={(e) => {
-                 setForm({
-                   ...form,
-                   name: e.target.value,
-                 });
-               }}
-             />
-           </p>
-           <p>
-             <label>
-               Your Email:{" "}
-               <input
-                 type="email"
-                 name="email"
-                 required
-                 onChange={(e) => {
-                   setForm({
-                     ...form,
-                     email: e.target.value,
-                   });
-                 }}
-               />
-             </label>
-           </p>
-           <p>
-             <label>
-               Message:{" "}
-               <textarea
-                 name="message"
-                 onChange={(e) => {
-                   setForm({
-                     ...form,
-                     message: e.target.value,
-                   });
-                 }}
-               ></textarea>
-             </label>
-           </p>
-           <p>
-             <button className="btn-submit" type="submit">
-               Send
-             </button>
-           </p>
-         </form>
-       </div>
-     );
+            <div>
+              <label htmlFor="name">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="message">Message:</label>
+              <textarea
+                type="text"
+                name="message"
+                id="message"
+                rows="4"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <button className="btn-submit" type="submit">
+                Submit
+              </button>
+            </div>
+          </>
+        )}
+      </NetlifyForm>
+    );
 }

@@ -3,7 +3,7 @@ import nhuPic from "../../img/Nhu.jpeg";
 import Grid from "@mui/material/Grid";
 import Download from "@mui/icons-material/Download";
 import Button from "@mui/material/Button";
-import CV from "../../img/Nhu-Dao-CV-PDF.pdf";
+import CV from "../../img/Nhu-Dao-CV.pdf";
 
 export default function AboutMe() {
   return (

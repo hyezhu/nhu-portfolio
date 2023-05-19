@@ -1,4 +1,9 @@
 @import "../../configs/configs.styles.scss";
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .contact-text {
   $t: 1s;

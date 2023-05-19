@@ -5,8 +5,7 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  background-image: linear-gradient(45deg, #330808, 
-  #3a2c09);
+  background-color: $color-background-dark;
   border-radius: 15px;
   padding: 30px;
   width: 500px;
@@ -15,8 +14,8 @@
 
 .form::before {
   content: '';
-  background-image: linear-gradient(45deg, #ff0000, 
-  #ffb700);
+  background-image: linear-gradient(45deg, $color-accent, 
+  $color-main-light);
   height: 456px;
   width: 506px;
   position: absolute;
@@ -30,7 +29,7 @@
   margin-top: 10px;
 //   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
-  background: #ff5900;
+  background: $color-main-light;
   color: black;
   padding: 0.7em 5.5em;
   display: flex;
@@ -43,15 +42,15 @@
 }
 
 .btn-submit:hover {
-  border: 2px solid #ff5900;
+  border: 2px solid $color-accent;
   background: #00000000;
-  color: #ff5900;
+  color: $color-main-dark;
 }
 
 .btn-submit:active {
   border: 2px solid #66da4300;
-  background: #ff5900;
-  color: black;
+  background: $color-main-dark;
+  color: $color-background;
 }
 
 input {
@@ -59,23 +58,23 @@ input {
   padding: 10px 50px;
   margin-bottom: 20px;
   border: 1px solid #66da4300;
-  border-bottom: 1px solid #ff5900;
+  border-bottom: 1px solid $color-accent;
   outline: none;
   background-color: transparent;
-  color: #ff5900;
+  color: $color-main-dark;
 //   font-family: Arial, Helvetica, sans-serif;
   transition: 0.2s;
 }
 
 input:focus {
   border: 1px solid #66da4300;
-  border-bottom: 1px solid #ff5900;
+  border-bottom: 1px solid $color-main-dark;
   background-color: transparent;
-  color: white;
+  color: $color-text;
 }
 
 input::placeholder {
-  color: #9b725b;
+  color: $color-background;
 }
 
 textarea {
@@ -85,20 +84,20 @@ textarea {
   height: 100px;
   margin-bottom: 20px;
   border: 1px solid #66da4300;
-  border-bottom: 1px solid #ff5900;
+  border-bottom: 1px solid $color-main-dark;
   outline: none;
   background-color: transparent;
-  color: #ff5900;
+  color: $color-main-dark;
 }
 
 textarea::placeholder {
-  color: #9b725b;
+  color: $color-background;
   content: "Please leave me a message";
 }
 
 textarea:focus {
   border: 1px solid #66da4300;
-  border-bottom: 1px solid #ff5900;
+  border-bottom: 1px solid $color-main-dark;
   background-color: transparent;
-  color: white;
+  color: $color-text;
 }

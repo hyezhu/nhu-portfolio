@@ -74,7 +74,7 @@ export default function Portfolio() {
                 <h4>Tour agency's landing page</h4>
                 <br />
                 <i>
-                  Created responsive web page with animations, applying image
+                  Responsive web page with animations, applying image
                   optimaztion and browser compatibility using HTML and Sass
                 </i>
               </p>

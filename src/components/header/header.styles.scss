@@ -1,34 +1,60 @@
 @import "../../configs/configs.styles.scss";
 
 .section-header {
-  display: block;
-  width: 100%;
   height: 100vh;
-  background-image: url("/img/bg1.jpg");
+  // display: float;
+  // width: 100%;
+  background-image: url("/img/bg6.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-blend-mode: multiply;
+  position: relative;
 }
 
-header h1 {
-  font-size: 70px;
-  font-weight: 600;
+// h1 {
+//   font-size: 70px;
+//   font-weight: 400;
+//   text-align: center;
+//   // padding-top: 6rem;
+//   // padding-bottom: 2rem;
+//   margin-top: $margin-top-big;
+  // background-image: linear-gradient(
+  //   to left,
+  //   $color-main-dark,
+  //   $color-main-light
+  // );
+  // color: transparent;
+  // background-clip: text;
+  // -webkit-background-clip: text;
+   
+// }
+
+.header-text {
+  font-size: 50px;
+  font-weight: 400;
   text-align: center;
-  margin-top: 120px;
-  margin-bottom: 30px;
-  background-image: linear-gradient(to left, #f77f00, #ffdd00);
+  background-image: linear-gradient(
+    to left,
+    $color-main-dark,
+    $color-main
+  );
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sub-heading {
   text-align: center;
-  color: #e9ecef;
+  color: $color-accent;
   font-size: 25px;
   font-weight: 300;
 }
@@ -37,27 +63,31 @@ header h1 {
   display: flex;
   flex-direction: column;
   gap: 25px;
-//   margin-left: 50px;
+  position: absolute;
+  left: -45%;
+  top: 25%;
+  //   margin-left: 50px;
 }
 
 .icon-link {
   text-decoration: none;
-  color: #e9ecef;
+  color: $color-text;
+  padding: 5px 10px;
 }
 
 .icon {
-    border-radius: 50%;
+  border-radius: 50%;
+  padding: 3px;
 }
 
 .icon:hover {
   background-image: linear-gradient(
     to right,
-    #e9ecef,
-    #ffdd05,
-    #ff9505,
-    #f77f03
+    
+    $color-main,
+    $color-accent
   );
-  color: #000;
+  color: $color-background;
   border-radius: 50%;
   background-position: 100% 0;
   moz-transition: all 0.4s ease-in-out;

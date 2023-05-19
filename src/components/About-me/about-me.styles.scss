@@ -9,7 +9,7 @@ h2 {
   margin: 120px 0px;
 
   .about-me-text {
-    background-color: rgba($color-white, 0.1);
+    background-color: rgba($color-main-light, 0.5);
     padding: 10px 20px;
     box-shadow: 0 5px 10px rgba($color-white, 0.2);
     border-radius: 20px;
@@ -49,19 +49,20 @@ h2 {
 }
 
 .btn-cv {
-  --primary-color: #f77f00;
-  --hovered-color: #ffdd00;
   position: relative;
   font-weight: 300;
   font-size: 14px;
   align-items: center;
+  border-radius: 2px;
+  
 }
 
 .btn-cv span {
   margin: 0;
   position: relative;
   font-size: 14px;
-  color: var(--primary-color);
+  padding: 2px;
+  color: $color-main-dark;
 }
 
 .btn-cv::after {
@@ -70,8 +71,8 @@ h2 {
   width: 0;
   left: 0;
   bottom: -7px;
-  background: var(--hovered-color);
-  height: 1px;
+  background: $color-accent;
+  height: 2px;
   transition: 0.3s ease-out;
 }
 

@@ -42,23 +42,22 @@ export default function Form() {
            onSubmit={handleSubmit}
            action="/pages/success"
            data-netlify-honeypot="bot-field"
+           hidden
          >
-           <input type="hidden" name="form-name" value="contact" />
-           <input
-             type="hidden"
-             name="form-name"
-             value="contactForm"
-             onChange={(e) => {
-               setForm({
-                 ...form,
-                 name: e.target.value,
-               });
-             }}
-           />
+           <input type="hidden" name="contactForm" value="contact" />
            <p>
-             <label>
-               Your Name: <input type="text" name="name" required />
-             </label>
+             <label>Your Name: </label>
+             <input
+               type="text"
+               name="name"
+               required
+               onChange={(e) => {
+                 setForm({
+                   ...form,
+                   name: e.target.value,
+                 });
+               }}
+             />
            </p>
            <p>
              <label>

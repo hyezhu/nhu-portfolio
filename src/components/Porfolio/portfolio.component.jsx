@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Button, CardActionArea, CardActions } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 import OmniFood from "../../img/omni-food.png";
 import LotusTour from "../../img/lotus-tour.png";
@@ -11,9 +12,14 @@ import Forkify from "../../img/forkify.png";
 
 export default function Portfolio() {
   return (
-    <div id="portfolio">
-      <h2>Portfolio</h2>
-      <div className="project-links">
+    <div id="portfolio" className="project-links">
+      <Grid
+        container
+        spacing={4}
+        justifyContent="center"
+        alignItems="center"
+        direction="row"
+      >
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
             <a
@@ -30,9 +36,9 @@ export default function Portfolio() {
             </a>
 
             <CardContent className="content">
+              <h4>Start-up: Omnifood - healthy meal</h4>
+              <br />
               <p>
-                <h4>Start-up: Omnifood - healthy meal</h4>
-                <br />
                 <i>
                   Implemented fluid layout and media query to build a responsive
                   website using HTML, CSS and Javascript (for sticky menu)
@@ -70,9 +76,9 @@ export default function Portfolio() {
             </a>
 
             <CardContent className="content">
+              <h4>Tour agency's landing page</h4>
+              <br />
               <p>
-                <h4>Tour agency's landing page</h4>
-                <br />
                 <i>
                   Responsive web page with animations, applying image
                   optimaztion and browser compatibility using HTML and Sass
@@ -110,9 +116,9 @@ export default function Portfolio() {
             </a>
 
             <CardContent className="content">
+              <h4>Recipe web application</h4>
+              <br />
               <p>
-                <h4>Recipe web application</h4>
-                <br />
                 <i>
                   Worked with APIs and data storage. Implemented function where
                   user can upload their own recipe. Project used HTML, CSS and
@@ -151,9 +157,9 @@ export default function Portfolio() {
             </a>
 
             <CardContent className="content">
+              <h4>Guess the Number</h4>
+              <br />
               <p>
-                <h4>Guess the Number</h4>
-                <br />
                 <i>
                   Small game built on Javascript applying logic and event
                   handling functions together with responsive design using CSS
@@ -175,7 +181,7 @@ export default function Portfolio() {
             </Button>
           </CardActions>
         </Card>
-      </div>
+      </Grid>
     </div>
   );
 }

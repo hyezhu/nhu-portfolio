@@ -13,10 +13,10 @@ export default function Form() {
         {({ handleChange, success, error }) => (
           <>
             <Honeypot />
-            {success && <p>Thanks for contacting us!</p>}
+            {success && <p className="submit-message">Thanks for contacting me!</p>}
             {error && (
-              <p>
-                Sorry, we could not reach our servers. Please try again later.
+              <p className="submit-message">
+                Sorry, the servers could not be reached. Please try again later.
               </p>
             )}
             <input type="hidden" name="form-name" value="contact" />
@@ -49,11 +49,9 @@ export default function Form() {
                 onChange={handleChange}
               />
             </div>
-            <div>
               <button className="btn-submit" type="submit">
                 Submit
               </button>
-            </div>
           </>
         )}
       </NetlifyForm>

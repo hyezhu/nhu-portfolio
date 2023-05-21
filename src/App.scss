@@ -1,28 +1,70 @@
 @import "./configs/configs.styles.scss";
+@import "./configs/mixins.scss";
 
-* {
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
-// body, html {
-//   height: 100%;
-// }
+html {
+  font-size: 62.5%;
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
 
 body {
-  font-family: "Nunito Sans" sans-serif;
+  font-family: "Nunito Sans";
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: $color-background;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-background;
   color: $color-text;
-  height: 100%;
+}
+
+::-moz-selection {
   background-image: linear-gradient(
     to top right,
     $color-background-dark,
     $color-background
   );
-  // background-image: url("./img/bg.svg");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
+  color: $color-text;
+}
+
+::selection {
+   background-image: linear-gradient(
+    to top right,
+    $color-background-dark,
+    $color-background
+  );
+  color: $color-text;
 }
 
 div {
@@ -31,8 +73,38 @@ div {
 }
 
 footer {
-  margin-top: 80px;
+  margin-top: $margin-bottom-big;
+  font-size: 1.4rem;
   text-align: center;
+  color: $color-text;
 }
 
+.home {
+  background-color: $color-background;
+  margin: 2rem !important;
+}
 
+.h2-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $margin-bottom-sm;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-accent-light, $color-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+
+.heading-secondary:hover {
+  transform: scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}

@@ -1,9 +1,11 @@
 import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
 import "./header.styles.scss";
+import Navigation from "../Navigation/navigation.component";
 
 export default function Header() {
     return (
       <div className="section-header">
+        <Navigation />
           <div className="header-text">
             <h1>Hello, my name is Nhu</h1>
             <p className="sub-heading">Junior Front-end Developer</p>

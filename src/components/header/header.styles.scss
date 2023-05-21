@@ -1,10 +1,15 @@
 @import "../../configs/configs.styles.scss";
+@import "../../configs/mixins.scss";
 
 .section-header {
-  height: 100vh;
+  height: 85vh;
   // display: float;
   // width: 100%;
-  background-image: url("/img/bg6.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-main-light, 0.5),
+      rgba($color-main-dark, 0.5)
+    ), url("/img/bg6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -12,8 +17,14 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-blend-mode: multiply;
   position: relative;
+  margin-bottom: $margin-bottom-big;
+
+   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 75%, 51% 100%, 0 75);
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 51% 100%, 0 75%);
+    height: 95vh;
+}
 }
 
 // h1 {
@@ -34,50 +45,29 @@
    
 // }
 
-.header-text {
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
-  background-image: linear-gradient(
-    to left,
-    $color-main-dark,
-    $color-main
-  );
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.sub-heading {
-  text-align: center;
-  color: $color-accent;
-  font-size: 25px;
-  font-weight: 300;
-}
-
 .icons-box {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 2.5rem;
   position: absolute;
   left: -45%;
-  top: 25%;
+  top: 15%;
   //   margin-left: 50px;
 }
 
 .icon-link {
   text-decoration: none;
   color: $color-text;
-  padding: 5px 10px;
-}
+  padding: 0.5rem 1rem;
+  
 
 .icon {
   border-radius: 50%;
-  padding: 3px;
+  padding: 0.3rem;
+  height: 4rem;
+  width: 4rem;
+}
+
 }
 
 .icon:hover {
@@ -95,3 +85,31 @@
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
+
+
+.header-text {
+  font-size: 5rem;
+  font-weight: 400;
+  text-align: center;
+  background-image: linear-gradient(
+    to left,
+    $color-main-dark,
+    $color-main
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 2s ease-out 0.5s;
+}
+
+.sub-heading {
+  text-align: center;
+  color: $color-accent;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+

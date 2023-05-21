@@ -1,16 +1,17 @@
 @import "../../configs/configs.styles.scss";
+@import "../../configs/mixins.scss";
 
 .project-links {
   display: flex;
-  gap: 25px;
-  margin-bottom: 120px;
+  gap: 2.5rem;
+  margin-bottom: $margin-bottom-big;
 }
 .project-link {
   text-decoration: none;
   color: $color-text;
-  font-size: 12px;
+  font-size: 1.2rem;
   display: inline-block;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
 }
 
 // .project-link {
@@ -57,54 +58,52 @@
 
 .card {
   
-  background-color: $color-background !important;
+  background-color:transparent !important;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 320px;
-  height: 450px;
-  box-shadow: 0 10px 20px rgba($color-black, 0.1) !important;
-  padding: 20px;
+  width: 32rem;
+  height: 45rem;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.1) !important;
+  padding: 2rem;
   overflow: hidden;
-  border-radius: 10px !important;
+  border-radius: 1rem !important;
 //   background: var(--background);
   z-index: 1;
   transition: all 0.5s ease;
 
   &:after {
-    --background: linear-gradient(to left, #a8a79f 0%, $color-background 100%);
+    --background: linear-gradient(to left, $color-main-light 0%, $color-main 100%);
     position: absolute;
     content: "";
-    top: 30px;
+    top: 3rem;
     left: 0;
     right: 0;
     z-index: -1;
     height: 100%;
     width: 100%;
-    transform: scale(0.8);
-    filter: blur(100px);
-    // background: #f7ba2b;
-    background: var(--background);
+    transform: scale(0.9);
+    filter: blur(7rem);
+    background: $color-main-light;
     transition: all opacity 0.5s ease;
   }
 }
 
 .content p {
   color: $color-text;
-  font-size: 16px;
+  font-size: 1.4rem;
 }
 
 .btn {
   text-decoration: none;
-  padding: 5px 10px;
-  font-weight: 600;
+  padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
   background: linear-gradient(180deg, $color-main-light 0%, $color-main 100%);
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
@@ -112,13 +111,14 @@
   transition: all 0.2s ease;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 
 .card:hover {
-  border: 2px solid $color-accent;
-  // transform: scale(1.05);
+  border: 0.2rem solid $color-accent;
+  background-color: rgba($color-accent-light, 0.5) !important;
+  
 }
 
 .card:hover::after {
@@ -126,8 +126,8 @@
 }
 
 .btn:hover {
-  outline: 2px solid $color-accent;
-  background: $color-background;
+  outline: 0.1rem solid $color-accent;
+  background: $color-accent-light !important;
   color: $color-text;
 }
 .project-link:hover {

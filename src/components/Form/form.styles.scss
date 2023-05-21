@@ -1,76 +1,78 @@
 @import "../../configs/configs.styles.scss";
+@import "../../configs/mixins.scss";
 
 .form {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   background-color: $color-background-dark;
-  border-radius: 15px;
-  padding: 30px;
-  width: 500px;
-  height: 450px;
-  border: 2px solid $color-accent !important;
-}
-
-.form::before {
-  content: '';
-  background-image: linear-gradient(45deg, $color-accent, 
-  $color-main-light);
-  height: 456px;
-  width: 506px;
-  position: absolute;
-  margin-top: -34px;
-  margin-left: px;
-  z-index: -1;
-  border-radius: 17px;
+  border-radius: 0.2rem;
+  padding: 3rem;
+  height: 70rem;
+  width: 80rem;
+  border: 0.2rem solid $color-accent !important;
+  font-size: 1.4rem;
 }
 
 .btn-submit {
-  margin-top: 10px;
+  margin-top: 1rem;
 //   font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 1.4rem;
   background: $color-main-light;
   color: $color-text;
-  padding: 0.7em 5.5em;
+  padding: 0.7rem 5.5rem;
   display: flex;
+  justify-content: center;
   align-items: center;
-  border: 2px solid #66da4300;
-  border-radius: 5em;
+  border: 0.1rem solid $color-main-dark;
+  border-radius: 0.2rem;
   overflow: hidden;
   transition: all 0.2s;
   cursor: pointer;
 }
 
 .btn-submit:hover {
-  border: 2px solid $color-accent;
+  border: 0.1rem solid $color-accent;
   background: #00000000;
-  color: $color-main-dark;
+  color: $color-main-light;
 }
 
 .btn-submit:active {
-  border: 2px solid #66da4300;
+  border: 0.1rem solid $color-main;
   background: $color-main-dark;
   color: $color-background;
 }
+.submit-message {
+    font-size: 1.4rem;
+    color: $color-main-light;
+    padding-bottom: 0.5rem;
+}
+
+label {
+    font-size: 1.4rem;
+    color: $color-main-light;
+    padding-bottom: 0.5rem;
+}
 
 input {
-  width: calc(100% - 10px);
-  padding: 10px 50px;
-  margin-bottom: 20px;
-  border: 1px solid #66da4300;
-  border-bottom: 1px solid $color-accent;
+  width: calc(100% - 1rem);
+  padding: 1rem 5rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 0.1rem solid $color-accent;
   outline: none;
-  background-color: transparent;
+  background-color: rgba($color-accent-light, 0.5);
   color: $color-main-dark;
 //   font-family: Arial, Helvetica, sans-serif;
   transition: 0.2s;
 }
 
 input:focus {
-  border: 1px solid #66da4300;
-  border-bottom: 1px solid $color-main-dark;
-  background-color: transparent;
+  border: 0.1rem solid #66da4300;
+  border-bottom: 0.1rem solid $color-main-dark;
+  background-color: rgba($color-accent-light, 0.9);
   color: $color-text;
 }
 
@@ -79,18 +81,17 @@ input::placeholder {
 }
 
 textarea {
-//   font-family: Arial, Helvetica, sans-serif;
-  width: calc(100% - 10px);
-  padding: 10px 50px;
-  height: 100px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid $color-main-dark;
-  border-radius: 2px;
+  width: calc(100% - 1rem);
+  padding: 1rem 5rem;
+  height: 10rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid $color-main-dark;
+  border-radius: 0.2rem;
   outline: none;
-  background-color: transparent;
-  color: $color-main-dark;
-  background-color: rgba($color-accent, 0.2);
+  background-color: rgba($color-accent-light, 0.5);
+  color: $color-text;
+  border-bottom: $color-accent;
 }
 
 textarea::placeholder {
@@ -99,8 +100,7 @@ textarea::placeholder {
 }
 
 textarea:focus {
-  border: 1px solid #66da4300;
-  border-bottom: 1px solid $color-main-dark;
-  background-color: rgba($color-accent, 0.2);
+  border: 0.1rem solid $color-accent;
+  background-color: rgba($color-accent-light, 0.9);
   color: $color-text;
 }

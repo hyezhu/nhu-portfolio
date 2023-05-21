@@ -1,4 +1,5 @@
 @import "../../configs/configs.styles.scss";
+@import "../../configs/mixins.scss";
 
 h2 {
   color: $color-main-dark;
@@ -6,37 +7,34 @@ h2 {
 }
 
 .section-about-me {
-  margin: 120px 0px;
+  margin-bottom: $margin-bottom-big;
 
   .about-me-text {
-    background-color: rgba($color-main-light, 0.5);
-    padding: 10px 20px;
-    box-shadow: 0 5px 10px rgba($color-white, 0.2);
-    border-radius: 20px;
+    background-color: rgba($color-accent-light, 0.5);
+    padding: 3rem 6rem;
+    box-shadow: 0 0.5rem 1rem rgba($color-white, 0.2);
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    width: 100rem;
+    margin: 0 3rem;
   }
 
   .about-me-photo {
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-  }
-  .about-me-photo {
-    height: 270px;
+    height: 27rem;
     border-radius: 50%;
-    float: left;
+    // transform: translateX(35%);
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     //   transform: translateX(50%);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
   }
   .about-me-photo:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    cursor: pointer;
+    filter: grayscale(20%);
+    -webkit-filter: grayscale(20%);
+    -moz-filter: grayscale(20%);
     //   transform: translateX(50%);
   }
 }
@@ -51,16 +49,15 @@ h2 {
 .btn-cv {
   position: relative;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1.4rem;
   align-items: center;
-  border-radius: 2px;
-  
+  border-radius: 0.2rem;
 }
 
 .btn-cv span {
   margin: 0;
   position: relative;
-  font-size: 14px;
+  font-size: 1.4rem;
   padding: 2px;
   color: $color-main-dark;
 }
@@ -70,9 +67,9 @@ h2 {
   content: "";
   width: 0;
   left: 0;
-  bottom: -7px;
+  bottom: -0.7rem;
   background: $color-accent;
-  height: 2px;
+  height: 0.2rem;
   transition: 0.3s ease-out;
 }
 

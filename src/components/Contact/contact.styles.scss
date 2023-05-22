@@ -15,7 +15,6 @@
     url("/img/card-container.jpg");
 
   background-size: cover;
-  background-attachment: fixed;
   justify-content: center;
   align-items: center;
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {

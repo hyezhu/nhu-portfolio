@@ -16,6 +16,7 @@ export default function Portfolio() {
       <Grid
         container
         spacing={4}
+        gap={3}
         justifyContent="center"
         alignItems="center"
         direction="row"

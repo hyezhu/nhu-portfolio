@@ -76,3 +76,23 @@ h2 {
 .btn-cv:hover::after {
   width: 100%;
 }
+
+.skill-container {
+  width: 100%; /* Full width */
+  background-color: #ddd; 
+  font-size: 1.2rem;
+}
+
+.skills {
+  font-size: 1.2rem;
+  text-align: right; /* Right-align text */
+  padding-top: 3px; /* Add top padding */
+  padding-bottom: 3px; /* Add bottom padding */
+  color: $color-main-light; /* White text color */
+  display: inline-block;
+}
+
+.html {width: 90%; background-color: $color-accent} 
+.js {width: 50%; background-color: $color-accent } 
+.react {width: 50%; background-color:$color-accent} 
+.web-design{width: 60%; background-color: $color-accent}

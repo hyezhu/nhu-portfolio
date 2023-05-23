@@ -8,7 +8,7 @@ export default function Header() {
         <Navigation />
           <div className="header-text">
             <h1>Hello, my name is Nhu</h1>
-            <p className="sub-heading">Junior Front-end Developer</p>
+            <p className="sub-heading">Front-end Developer</p>
             <div className="icons-box">
               <a
                 className="icon-link"

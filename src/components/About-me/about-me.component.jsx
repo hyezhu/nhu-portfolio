@@ -12,8 +12,6 @@ export default function AboutMe() {
         container
         spacing={2}
         gap={3}
-        justifyContent="center"
-        alignItems="center"
         direction="row"
         className="about-me-container"
       >
@@ -31,22 +29,42 @@ export default function AboutMe() {
           flexDirection="column"
         >
           <p>
-            As a junior web front-end developer, I am passionate about creating
-            visually appealing and user-friendly websites. I pay meticulous
-            attention to details, make sure every element is perfectly aligned
-            and visually consistent. My skills include:{" "}
+            As a front-end developer, I am passionate about creating
+            visually appealing and user-friendly websites. My skills include:{" "}
             <b>
               HTML5, CSS3, Sass, Javascript ES6, React.js, React Hooks, Git,
               Firebase, Redux.
             </b>
+            <Grid
+              container
+              display="flex"
+              flexDirection="column"
+              textAlign="left"
+              justifyContent="center"
+              marginTop={1}
+            >
+              <p>HTML</p>
+              <div class="skill-container">
+                <div class="skills html">90%</div>
+              </div>
+              <p>JavaScript</p>
+              <div class="skill-container">
+                <div class="skills js">50%</div>
+              </div>
+              <p>React</p>
+              <div class="skill-container">
+                <div class="skills react">50%</div>
+              </div>
+              <p>Web design/CSS/Sass</p>
+              <div class="skill-container">
+                <div class="skills web-design">60%</div>
+              </div>
+            </Grid>
             <br />
-            I'm currently working as a professional nail artist, where I apply
-            my attention to details and passion to design unique nail art. This
-            work has brought me ability in time management, client communication
-            and delivering high quality work.
-            <br />I am excited to combine my passion for web development with my
-            artistic background to contribute to innovative projects and
-            collaborate with teams to deliver outstanding results.
+            I'm also a nail artist and painter by hobby, I am excited to combine
+            my passion for web development with my artistic background to
+            contribute to innovative projects and collaborate with teams to
+            deliver outstanding results.
           </p>
           <br />
           <Button
@@ -57,7 +75,7 @@ export default function AboutMe() {
             endIcon={<Download />}
             size="small"
           >
-            <span>Download my CV</span>
+            <span>Check my CV</span>
           </Button>
         </Grid>
       </Grid>

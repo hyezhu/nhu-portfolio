@@ -7,7 +7,7 @@ import Grid from "@mui/material/Grid";
 
 import OmniFood from "../../img/omni-food.png";
 import LotusTour from "../../img/lotus-tour.png";
-import GuessNumber from "../../img/guess-number.png";
+import AdInsight from "../../img/ad-insight.png";
 import Forkify from "../../img/forkify.png";
 
 export default function Portfolio() {
@@ -152,7 +152,7 @@ export default function Portfolio() {
               <CardMedia
                 className="card-image"
                 sx={{ height: 140 }}
-                image={GuessNumber}
+                image={AdInsight}
                 title="number game"
               />
             </a>

@@ -145,7 +145,7 @@ export default function Portfolio() {
         <Card className="card" sx={{ maxWidth: 360 }}>
           <CardActionArea>
             <a
-              href="https://guess-my-number-nhu.netlify.app"
+              href="https://ad-insight.netlify.app"
               target="_blank"
               rel="noreferrer"
             >
@@ -158,12 +158,14 @@ export default function Portfolio() {
             </a>
 
             <CardContent className="content">
-              <h4>Guess the Number</h4>
+              <h4>Data Analytic Platform</h4>
               <br />
               <p>
                 <i>
-                  Small game built on Javascript applying logic and event
-                  handling functions together with responsive design using CSS
+                  Data Analytic Platform centralized ads performance data
+                  analysis. The project is still going on and this is the
+                  dashboard I've built so far, using React (Javascript) and
+                  Material UI.
                 </i>
               </p>
             </CardContent>
@@ -173,7 +175,7 @@ export default function Portfolio() {
             <Button className="btn" size="small">
               <a
                 className="project-link"
-                href="https://guess-my-number-nhu.netlify.app"
+                href="https://ad-insight.netlify.app"
                 target="_blank"
                 rel="noreferrer"
               >

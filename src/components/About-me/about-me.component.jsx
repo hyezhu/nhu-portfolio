@@ -29,38 +29,42 @@ export default function AboutMe() {
           flexDirection="column"
         >
           <p>
-            As a front-end developer, I am passionate about creating
-            visually appealing and user-friendly websites. My skills include:{" "}
+            As a front-end developer, I am passionate about creating visually
+            appealing and user-friendly websites. My skills include:{" "}
             <b>
               HTML5, CSS3, Sass, Javascript ES6, React.js, React Hooks, Git,
               Firebase, Redux.
             </b>
-            <Grid
-              container
-              display="flex"
-              flexDirection="column"
-              textAlign="left"
-              justifyContent="center"
-              marginTop={1}
-            >
-              <p>HTML</p>
-              <div class="skill-container">
-                <div class="skills html">90%</div>
-              </div>
-              <p>JavaScript</p>
-              <div class="skill-container">
-                <div class="skills js">50%</div>
-              </div>
-              <p>React</p>
-              <div class="skill-container">
-                <div class="skills react">50%</div>
-              </div>
-              <p>Web design/CSS/Sass</p>
-              <div class="skill-container">
-                <div class="skills web-design">60%</div>
-              </div>
-            </Grid>
-            <br />
+          </p>
+          <Grid
+            container
+            display="flex"
+            flexDirection="column"
+            textAlign="left"
+            justifyContent="center"
+            marginTop={1}
+            xs={8}
+            md={12}
+          >
+            <h6>HTML</h6>
+            <div className="skill-container">
+              <div className="skills html">90%</div>
+            </div>
+            <h6>JavaScript</h6>
+            <div className="skill-container">
+              <div className="skills js">50%</div>
+            </div>
+            <h6>React</h6>
+            <div className="skill-container">
+              <div className="skills react">50%</div>
+            </div>
+            <h6>Web design/CSS/Sass</h6>
+            <div className="skill-container">
+              <div className="skills web-design">60%</div>
+            </div>
+          </Grid>
+          <br />
+          <p>
             I'm also a nail artist and painter by hobby, I am excited to combine
             my passion for web development with my artistic background to
             contribute to innovative projects and collaborate with teams to
